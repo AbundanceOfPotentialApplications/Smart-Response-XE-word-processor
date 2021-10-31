@@ -698,8 +698,8 @@ int main(void) {
       while(!SRXEGetKey());
       cls();
       break; // contrast down*/ 
-    case K_F2: SRXEIncreaseVop();
-    case K_F3: SRXEDecreaseVop();
+    case K_F2: SRXEIncreaseVop(); break;
+    case K_F3: SRXEDecreaseVop(); break;
     case K_F4: // export 2 big QR codes
       cls();
       QR_export(pageBuffer,0, 29, 10,false); // export as version 29: 133x133 pixels, low redundancy -> 1628 bajtów...
